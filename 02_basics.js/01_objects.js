@@ -44,7 +44,7 @@ const regularuser={
 
     }
 }
-console.log(regularuser.fullname.userfullname.firstname);
+// console.log(regularuser.fullname.userfullname.firstname);
 const obj1={1: "a" , 2: "b"}
 const obj2={3: "a" , 4: "b"}
 const obj3={5: "a" , 6: "b"}
@@ -53,16 +53,30 @@ const obj4={ obj1,obj2,obj3}
 const obj5=Object.assign({}, obj1,obj2,obj3)
 
 const obj6= { ...obj1,...obj2,...obj3}  // best one to use
-console.log(obj4);
-console.log(obj5);
-console.log(obj6);
+// console.log(obj4);
+// console.log(obj5);
+// console.log(obj6);
 
-console.log(Object.keys(tinderuser2));
-console.log(Object.values(tinderuser2));
-console.log(Object.entries(tinderuser2));
-console.log(tinderuser2.hasOwnProperty('isloggedin'));
-
-
+// console.log(Object.keys(tinderuser2));
+// console.log(Object.values(tinderuser2));
+// console.log(Object.entries(tinderuser2));
+// console.log(tinderuser2.hasOwnProperty('isloggedin'));
 
 
+const course={
+    coursename:'js',
+    price:'00',
+    instructor:"hitesh"
+}
 
+const {instructor: sirji}=course
+
+// console.log(instructor);
+
+console.log(sirji); // both give same result
+
+// {
+//     name:"sameer",
+//     coursename2:"js",
+//     price:"00"
+// }
